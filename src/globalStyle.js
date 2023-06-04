@@ -1,21 +1,23 @@
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
-* {
-  box-sizing: border-box;
+import styled from "styled-components";
+export const Styles = styled.div`
+.main-content{
+  display:flex;
+  justify-content:center;
 }
-body {
-  margin: 0;
-  background: #151515;
+h1{
+  text-align: center;
 }
-ul {
-  margin: 0;
-  padding: 0;
+button{
+  width:100%;
+  padding:10px 0;
+  border-radius:8px;
+  border:none;
+  background: darkslategray;
+  color:white;
+  font-size:14px;
+  margin-top:24px;
 }
-ul li {
-  list-style: none;
+form{
+  max-width:290px;
 }
-
-`;
-
-export default GlobalStyle;
+`
